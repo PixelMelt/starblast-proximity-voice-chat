@@ -1,14 +1,20 @@
-# Simple Peer Proximity Voice Chat
+# Starblast Proximity Voice Chat
 
-The non-proximity base for this project is [demo-voice](https://github.com/Meshiest/demo-voice)
+Lots of code reused from [demo-proximity-voice](https://github.com/Meshiest/demo-proximity-voice), thanks!
 
-This is a demo for a group proxmity voice chat using peerjs to handle WebRTC and socket.io to help clients connect.
+## This repository allows you to set up peer to peer voice chat for the game starblast.io
+<br>
 
-You need to generate a self-signed certificate to run this as voice media can only be used over secure connections:
+### clone this repo and then do the following
+<br>
+
+Either generate a self-signed certificate or put the server behind a reverse proxy as voice media can only be used over secure connections:
 
     openssl genrsa -out key.pem
     openssl req -new -key key.pem -out csr.pem
     openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
     rm csr.pem
 
-Install dependencies with `npm install` and run with `npm start`. Open `https://127.0.0.1:3000`, `https://yourexternalip:3000`, or `https://yourlanip:3000` in a supporting browser on multiple devices.# starblast-proximity-voice-chat
+Install dependencies with `npm install` and run with `npm start`. Open `https://127.0.0.1:3000`, `https://yourexternalip:3000`, or `https://yourlanip:3000` in a supporting browser on multiple devices.
+
+Edit the userscript to reflect your servers address and port (the port for https is 443)
