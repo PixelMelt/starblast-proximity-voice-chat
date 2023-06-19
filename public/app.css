@@ -1,0 +1,18 @@
+h1, p, a {
+    color: #CDD6F4;
+}
+
+a {
+    /* glow */
+    text-shadow: 0 0 10px #ffffff;
+    /* no underline */
+    text-decoration: none;
+}
+
+body {
+    background-color: #1E1E2E;
+}
+
+.center {
+    text-align: center;
+}

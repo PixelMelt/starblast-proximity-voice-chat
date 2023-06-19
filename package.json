@@ -1,0 +1,19 @@
+{
+  "name": "peer-proxmity-voice-demo",
+  "version": "2.0.0",
+  "description": "A demo of a proximity voice chatroom using peerjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Meshiest",
+  "license": "CC0 1.0 Universal",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "peer": "^0.5.3",
+    "socket.io": "^2.3.0",
+    "three": "^0.119.1",
+    "uuid": "^8.3.0"
+  }
+}
